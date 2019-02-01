@@ -44,7 +44,32 @@
             </div>
         </div>
         
+        <!-- Checkboxes are hard -->
+        <asp:CheckBox ID="CheckBox1" runat="server" ></asp:CheckBox>
+        <label class="form-check-label">Check Box</label>
+        
+        <div class="form-check"><label><asp:CheckBox ID="testCheckBox" runat="server"></asp:CheckBox> CheckBox</label></div>
 
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+                Default checkbox
+            </label>
+        </div>
+        
+        <!--  Radio Buttons -->
+        <div class="form-check"><asp:RadioButton ID="RadioButton1" runat="server" GroupName="radioButtons" /><label>Option A</label></div>
+        <div class="form-check"><asp:RadioButton ID="RadioButton2" runat="server" GroupName="radioButtons" /><label>Option B</label></div>
+        <div class="form-check"><asp:RadioButton ID="RadioButton3" runat="server" GroupName="radioButtons" /><label>Option C</label></div>
+        
+        <div class=""><label><asp:RadioButton ID="testRadioButtonA" runat="server" GroupName="TestGroup"></asp:RadioButton> RadioButton 1</label></div>
+        <div class=""><label><asp:RadioButton ID="testRadioButtonB" runat="server" GroupName="TestGroup"></asp:RadioButton> RadioButton 2</label></div>
+
+        <!--  Button -->
+        
+        <asp:Button ID="Button1" runat="server" Text="Button" CssClass="btn btn-primary"/>
+        <br/>
+        <br/>
     </div>
 
 </form>
